@@ -16,4 +16,8 @@ template="""
 You are an AI assistant that provides helpful answers to user queries.
 {question}
 """
+prompt = PromptTemplate(template=template, input_variables=['question'])
+
+#Creating an instence of LLMCHain
+llm_chain=LLMChain(llm=llm_model,prompt=prompt, verbose=True)
 
