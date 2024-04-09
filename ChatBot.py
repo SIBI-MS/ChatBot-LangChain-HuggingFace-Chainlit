@@ -1,10 +1,12 @@
 #Importing neccessary libraries
 from langchain import HuggingFaceHub, PromptTemplate,LLMChain
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
 #Storing apikey and model name
-os.environ['HUGGINGFACE_API_KEY']='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'
+os.environ['HUGGINGFACE_API_KEY']=os.getenv("HUGGINGFACE_API_KEY")
 model_id = 'mistralai/Mistral-7B-Instruct-v0.2'
 
 #Creating an instence of model

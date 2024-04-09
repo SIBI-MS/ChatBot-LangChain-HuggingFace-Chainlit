@@ -1,2 +1,3 @@
 langchain
 chainlit
+python_dotenv
