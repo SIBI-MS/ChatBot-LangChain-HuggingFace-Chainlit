@@ -2,14 +2,15 @@
 from langchain import HuggingFaceHub, PromptTemplate,LLMChain
 import os
 
+
 #Storing apikey and model name
-os.environ['API_KEY']='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'
-model_id='deepset/roberta-base-squad2'
+os.environ['HUGGINGFACE_API_KEY']='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'
+model_id = 'mistralai/Mistral-7B-Instruct-v0.2'
 
 #Creating an instence of model
-llm_model=HuggingFaceHub(huggingface_api_key=os.environ['API_KEY'],
+llm_model=HuggingFaceHub(huggingfacehub_api_token=os.environ['HUGGINGFACE_API_KEY'],
                          repo_id=model_id,
-                         model_kwargs={"temperature":0.7, 'max_new_tokens':2000})
+                         model_kwargs={"temperature":0.5, 'max_new_tokens':250})
 
 #Creating prompt
 template="""
@@ -21,3 +22,6 @@ prompt = PromptTemplate(template=template, input_variables=['question'])
 #Creating an instence of LLMCHain
 llm_chain=LLMChain(llm=llm_model,prompt=prompt, verbose=True)
 
+def process_message(message):
+    response =llm_chain.run(message)
+    return response
