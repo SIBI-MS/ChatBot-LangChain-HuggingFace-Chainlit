@@ -1,8 +1,8 @@
 ### G-BOT: AI-Powered Chatbot
 
-![G-BOT](G-BOT.png)
+![G-BOT](G-BOT1.png)
 
-![G-BOT](sample.png)
+![G-BOT](sample1.png)
 
 
 
