@@ -7,8 +7,8 @@
 
 
 ## Overview
-G-BOT is an advanced chatbot created using the Langchain framework, powered by the cutting-edge Hugging Face model tiiuae/falcon-7b-instruct. This chatbot aims to provide intuitive and engaging conversations on a wide range of topics, enhancing user interaction and experience. With the integration of Chainlit for UI, G-BOT offers a seamless interface for users to interact with.
 
+G-BOT is a chatbot created using the Langchain framework, powered by the cutting-edge Hugging Face model tiiuae/falcon-7b-instruct. This chatbot aims to provide conversations on a wide range of topics, enhancing user interaction and experience. With the integration of Chainlit for UI, G-BOT offers a good interface for users to interact with.
 ## Features
 - **Hugging Face Model**: Utilizes the tiiuae/falcon-7b-instruct model for natural language understanding and generation.
 - **Langchain Framework**: Provides a robust architecture for building conversational AI systems.
