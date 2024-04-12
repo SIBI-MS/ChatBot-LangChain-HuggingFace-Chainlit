@@ -1,4 +1,4 @@
-### G-BOT: AI-Powered Chatbot
+# G-BOT: AI-Powered Chatbot
 
 ![G-BOT](G-BOT1.png)
 
